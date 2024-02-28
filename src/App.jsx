@@ -1,9 +1,14 @@
-import "./styles/root.css";
+import Navbar from "./components/navbar";
+import Welcome from "./components/welcome";
+import "./styles/main.css";
 
 function App() {
   return (
     <>
-      <aside>Nav</aside>
+      <aside>
+        <Welcome />
+        <Navbar />
+      </aside>
       <main>Hello World</main>
     </>
   );
