@@ -5,8 +5,8 @@ const Navbar = () => {
     <>
       <nav id="nav-container">
         <ul>
-          <li>apples</li>
-          <li>peara</li>
+          <li key={"apple"}>apples</li>
+          <li key={"pear"}>pears</li>
         </ul>
       </nav>
     </>

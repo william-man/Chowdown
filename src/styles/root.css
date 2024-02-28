@@ -2,19 +2,25 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   padding: 0;
   margin: 0;
+}
+html {
+  margin: 0;
+  padding: 0;
 }
 
 aside {
   border: 2px #000 solid;
-  width: fit-content;
+
   height: 100vh;
 }
 
 main {
   border: 2px #000 solid;
-  width: fit-content;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
