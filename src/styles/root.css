@@ -1,20 +1,42 @@
-#root {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --border-radius: 5px;
+  --test-border: 2px #000 solid;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+#root {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0;
-  margin: 0;
+  height: 100%;
 }
 
 aside {
-  border: 2px #000 solid;
-  width: fit-content;
-  height: 100vh;
+  border: var(--test-border);
+  height: 100%;
+  width: 20%;
+  padding: 10px 10px;
 }
 
 main {
-  border: 2px #000 solid;
-  width: fit-content;
+  border: var(--test-border);
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  width: 80%;
+  overflow-y: auto;
+  padding: 10px 10px;
 }
