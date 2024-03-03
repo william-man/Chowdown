@@ -1,0 +1,132 @@
+/*
+This css file is to control the display of the modal for a recipe.
+*/
+
+/*
+.recipe-container controls the backdrop and acts as the parent component for the modal.
+*/
+
+.recipe-container {
+  background-color: var(--overlay-color);
+  z-index: 2;
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+.recipe-modal controls the display area of the data
+*/
+.recipe-modal {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "close"
+    "video" "name" "description" "difficulty" "yield" "ingredients" "nutrition"
+    "instructions";
+  max-width: 900px;
+  max-height: 1000px;
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  padding: 30px 50px;
+  margin: 30px auto;
+  background-color: var(--display-background-color-light);
+  border-radius: var(--border-radius);
+  overflow-y: auto;
+  font-size: 1.3rem;
+  line-height: 45px;
+  gap: 5px 0;
+  color: var(--font-color-light);
+}
+
+/*
+.recipe-modal__close, the closing button
+*/
+.recipe-modal__close {
+  grid-area: close;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*
+.recipe-modal__close svg, svg for the button
+*/
+.recipe-modal__close svg {
+  scale: 2;
+  cursor: pointer;
+}
+
+/*
+embedded video container
+*/
+.recipe-modal__video {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
+}
+/*
+embedded video
+*/
+.recipe-modal__video video {
+  border-radius: var(--border-radius);
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #000;
+}
+
+/*
+recipe name
+*/
+.recipe-modal__name {
+  grid-area: name;
+}
+
+/*
+recipe description
+*/
+.recipe-modal__description {
+  grid-area: description;
+}
+
+/*
+recipe difficulty
+*/
+
+.recipe-modal__difficulty {
+  grid-area: difficulty;
+}
+
+/*
+recipe yield
+*/
+
+.recipe-modal__yield {
+  grid-area: yield;
+}
+
+/*
+recipe ingredients
+*/
+
+.recipe-modal__ingredients {
+  grid-area: ingredients;
+}
+
+/*
+recipe nutrition
+*/
+.recipe-modal__nutrition {
+  grid-area: nutrition;
+}
+
+/*
+recipe instructions
+*/
+.recipe-modal__instructions {
+  grid-area: instructions;
+}
