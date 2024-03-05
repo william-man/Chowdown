@@ -1,13 +1,18 @@
-import React from "react";
+import tags from "../data/tags";
+import Dropdown from "./dropdown";
+
+const results = tags.results;
 
 const Navbar = () => {
   return (
     <>
       <nav id="nav-container">
-        <ul>
-          <li key={"apple"}>apples</li>
-          <li key={"pear"}>pears</li>
-        </ul>
+        <div id="form-container">
+          <form>
+            <input type="text" placeholder="Search..." />
+          </form>
+        </div>
+        <div id="tags-container"></div>
       </nav>
     </>
   );
