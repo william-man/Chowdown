@@ -1,4 +1,7 @@
-import { rootTags, filterTags } from "../../src/components/navbar.jsx";
+import {
+  rootTags,
+  filterTags,
+} from "../../src/components/utils/tags/filteringTags.js";
 import tags from "./mock/mock_tags.js";
 import { expect, test } from "vitest";
 
