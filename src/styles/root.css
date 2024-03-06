@@ -27,6 +27,7 @@ aside {
   height: 100%;
   width: 20%;
   padding: 10px 10px;
+  overflow-y: auto;
 }
 
 main {
