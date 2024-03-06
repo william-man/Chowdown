@@ -16,7 +16,7 @@ const Navbar = () => {
         </div>
         <div id="tags-container">
           {sortedTags.map((element, index) => {
-            return <Dropdown data={element} id={index} />;
+            return <Dropdown data={element} id={index} key={index} />;
           })}
         </div>
       </nav>
