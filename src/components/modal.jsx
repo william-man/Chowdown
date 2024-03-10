@@ -61,13 +61,13 @@ const Modal = ({ recipe, onClose }) => {
 
   return (
     <div className="recipe-container">
-      <div className="recipe-modal">
+      <article className="recipe-modal">
         {/*
         Close button
         */}
         <div className="recipe-modal__close">
           <div onClick={onClose}>
-            <FaWindowClose />
+            <bold>X</bold>
           </div>
         </div>
         {/*
@@ -126,7 +126,7 @@ const Modal = ({ recipe, onClose }) => {
         instructions
         */}
         <div className="recipe-modal__instructions">{instructionList()}</div>
-      </div>
+      </article>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Dropdown = ({ data, id }) => {
   return (
     <div
       className="dropdown-container"
-      key={data[0].root_tag_type}
+      key={data[0].root_tag_type + id.toString()}
       onClick={toggleDropDown}
     >
       <div className="dropdown-heading">

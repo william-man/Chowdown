@@ -3,9 +3,25 @@ import Welcome from "./components/welcome";
 import data from "./data/recipes.js";
 import Card from "./components/card.jsx";
 import "./styles/main.css";
+import { useState } from "react";
+import Modal from "./components/modal.jsx";
 
 function App() {
   const { results } = data;
+  const [modal, setModal] = useState(false);
+  const [chosenRecipe, setChosenRecipe] = useState(null);
+
+  const showModal = (recipe) => {
+    setChosenRecipe(recipe);
+    setModal(true);
+    console.log(modal);
+  };
+
+  const hideModal = () => {
+    setChosenRecipe(null);
+    setModal(false);
+  };
+
   return (
     <>
       <aside>
@@ -13,9 +29,14 @@ function App() {
         <Navbar />
       </aside>
       <main>
-        {results.map((recipe) => {
-          return <Card key={recipe.id} recipe={recipe} />;
-        })}
+        {results.map((recipe) => (
+          <Card
+            key={recipe.id}
+            recipe={recipe}
+            onClick={() => showModal(recipe)}
+          />
+        ))}
+        {modal === true && <Modal recipe={chosenRecipe} onClose={hideModal} />}
       </main>
     </>
   );

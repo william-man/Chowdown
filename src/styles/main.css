@@ -1,4 +1,5 @@
 @import url("root.css");
 @import url("./components/navbar.css");
 @import url("./components/card.css");
-@import url("./components//dropdown.css");
+@import url("./components/dropdown.css");
+@import url("./components/modal.css");
