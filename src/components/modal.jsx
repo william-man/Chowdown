@@ -60,7 +60,7 @@ const Modal = ({ recipe, onClose }) => {
   };
 
   return (
-    <div className="recipe-container">
+    <div className="recipe-container" onClick={onClose}>
       <article className="recipe-modal">
         {/*
         Close button
