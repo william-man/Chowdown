@@ -6,6 +6,7 @@ const Navbar = () => {
   const { results } = tags;
   const roots = rootTags(results);
   const sortedTags = filterTags(results, roots);
+
   return (
     <>
       <nav id="nav-container">
