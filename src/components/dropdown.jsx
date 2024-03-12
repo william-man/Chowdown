@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { upperCaseTag } from "./utils/tags/rootTagName";
 
 const Dropdown = ({ data, id }) => {
   const [show, setShow] = useState(false);
@@ -15,7 +16,7 @@ const Dropdown = ({ data, id }) => {
       key={data[0].root_tag_type + id.toString()}
     >
       <div className="dropdown-heading" onClick={toggleDropDown}>
-        <h4>{data[0].root_tag_type}</h4>
+        <h4>{upperCaseTag(data[0].root_tag_type)}</h4>
       </div>
       <div className="dropdown-tag-container">
         {data.map((tag) => {
