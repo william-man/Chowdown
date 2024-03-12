@@ -13,6 +13,7 @@ const Navbar = () => {
         <div id="form-container">
           <form>
             <input type="text" placeholder="Search..." />
+            <button>Submit</button>
           </form>
         </div>
         <div id="tags-container">
