@@ -1,3 +1,25 @@
 #nav-container {
-  border: 2px #000 solid;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#form-container {
+  padding: 20px 0;
+}
+
+#form-container form {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#form-container input {
+  padding: 5px 0;
+}
+
+#form-container input {
+  padding: 5px 0;
 }

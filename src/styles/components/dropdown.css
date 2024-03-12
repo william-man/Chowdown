@@ -1,0 +1,20 @@
+.dropdown-container {
+  padding: 2px 0;
+}
+
+.dropdown-container:hover {
+  cursor: pointer;
+}
+
+.dropdown-heading {
+  padding: 10px 5px;
+}
+
+.dropdown-tag {
+  padding: 10px 5px;
+  border-bottom: 2px solid var(--dropdown-tag-colour);
+}
+
+.dropdown-tag:hover {
+  background-color: var(--dropdown-tag-colour-hover);
+}

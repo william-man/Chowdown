@@ -10,10 +10,14 @@
 
   --aside-colour: #2d882d;
   --aside-max-width: 250px;
+  --aside-font-colour: #fff;
+  --dropdown-tag-colour: #116611;
+  --dropdown-tag-colour-hover: #54aa54;
 
   --main-colour: #faedbf;
 
   --card-colour: #ffe89d;
+  --modal-colour: #faedbf;
 }
 
 body {
@@ -30,17 +34,16 @@ body {
 }
 
 aside {
-  border: var(--test-border);
   height: 100%;
   width: 20%;
   max-width: var(--aside-max-width);
   padding: 10px 10px;
   overflow-y: auto;
   background-color: var(--aside-colour);
+  color: var(--aside-font-colour);
 }
 
 main {
-  border: var(--test-border);
   display: flex;
   justify-content: space-around;
   width: var(100vw - --aside-max-width);

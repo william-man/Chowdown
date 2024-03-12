@@ -13,17 +13,16 @@ const Dropdown = ({ data, id }) => {
     <div
       className="dropdown-container"
       key={data[0].root_tag_type + id.toString()}
-      onClick={toggleDropDown}
     >
-      <div className="dropdown-heading">
+      <div className="dropdown-heading" onClick={toggleDropDown}>
         <h4>{data[0].root_tag_type}</h4>
       </div>
-      <div>
+      <div className="dropdown-tag-container">
         {data.map((tag) => {
           if (show) {
             return (
-              <div key={tag.display_name}>
-                <h5>{tag.display_name}</h5>
+              <div key={tag.display_name} className="dropdown-tag">
+                <p>{tag.display_name}</p>
               </div>
             );
           }
