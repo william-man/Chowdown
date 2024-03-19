@@ -29,15 +29,13 @@ function App() {
         <Navbar />
       </aside>
       <main>
-        <div className="card-container">
-          {results.map((recipe) => (
-            <Card
-              key={recipe.id}
-              recipe={recipe}
-              onClick={() => showModal(recipe)}
-            />
-          ))}
-        </div>
+        {results.map((recipe) => (
+          <Card
+            key={recipe.id}
+            recipe={recipe}
+            onClick={() => showModal(recipe)}
+          />
+        ))}
 
         {modal === true && <Modal recipe={chosenRecipe} onClose={hideModal} />}
       </main>
